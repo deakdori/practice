@@ -1,10 +1,15 @@
 import React from 'react';
+import "./List.css";
 
-const List = () => {
+export const List = ({name, image, age}) => {
   return (
-    <>
-      <h2>list component</h2>
-    </>
+    <article>
+      <img src={image} alt={`${name}'s avatar`}/>
+      <div>
+        <h4>{name}</h4>
+        <p>{age} years</p>
+      </div>
+    </article>
   );
 };
 
